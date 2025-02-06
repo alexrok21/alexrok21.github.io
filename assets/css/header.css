@@ -1,0 +1,59 @@
+/* Estilos para el header */
+header {
+   background: #2c3e50;
+   /* Color de fondo */
+   color: #fff;
+   /* Color del texto */
+   padding: 1rem;
+}
+
+.header-container {
+   display: flex;
+   justify-content: space-between;
+   /* Separa el logo y el menú */
+   align-items: center;
+   /* Alinea verticalmente los elementos */
+   max-width: 1200px;
+   /* Ancho máximo del contenedor */
+   margin: 0 auto;
+   /* Centra el contenido horizontalmente */
+}
+
+/* Estilos para el logo */
+.logo {
+   display: flex;
+   align-items: center;
+   /* Alinea el ícono y el texto */
+}
+
+.logo-icon {
+   width: 40px;
+   /* Ancho del logo */
+   height: 40px;
+   /* Altura del logo */
+   margin-right: 0.5rem;
+   /* Espacio entre el logo y el texto */
+}
+
+.logo-text {
+   font-size: 1.2rem;
+   font-weight: bold;
+}
+
+/* Estilos para el menú de navegación */
+.nav-menu {
+   display: flex;
+   gap: 1rem;
+   /* Espacio entre los enlaces */
+}
+
+.nav-menu a {
+   color: #fff;
+   text-decoration: none;
+   font-size: 1rem;
+}
+
+.nav-menu a:hover {
+   text-decoration: underline;
+   /* Efecto al pasar el mouse */
+}
