@@ -1,22 +1,17 @@
 /* Estilos para el header */
 header {
-   background: #2c3e50;
-   /* Color de fondo */
+   background: var(--color-secondary);
+   /* Azul morado */
    color: #fff;
-   /* Color del texto */
    padding: 1rem;
 }
 
 .header-container {
    display: flex;
    justify-content: space-between;
-   /* Separa el logo y el menú */
    align-items: center;
-   /* Alinea verticalmente los elementos */
    max-width: 1200px;
-   /* Ancho máximo del contenedor */
    margin: 0 auto;
-   /* Centra el contenido horizontalmente */
 }
 
 /* Estilos para el logo */
@@ -28,18 +23,14 @@ header {
 
 .logo-icon {
    width: 40px;
-   /* Ancho del logo */
    height: 40px;
-   /* Altura del logo */
    margin-right: 0.5rem;
-   /* Espacio entre el logo y el texto */
 }
 
 .logo-text {
    font-size: 1.2rem;
    font-weight: bold;
    color: #fff;
-   /* Asegúrate de que el texto sea visible */
 }
 
 /* Estilos para el menú de navegación */
@@ -56,6 +47,6 @@ header {
 }
 
 .nav-menu a:hover {
-   text-decoration: underline;
-   /* Efecto al pasar el mouse */
+   color: var(--color-accent);
+   /* Amarillo cálido */
 }

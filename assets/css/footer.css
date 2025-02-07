@@ -1,6 +1,7 @@
-/* Estilos para el footer */
+/* Footer */
 footer {
-   background: #2c3e50;
+   background: var(--color-secondary);
+   /* Azul morado */
    color: #fff;
    text-align: center;
    padding: 1rem;

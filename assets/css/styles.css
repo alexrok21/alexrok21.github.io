@@ -2,3 +2,20 @@
 @import url('header.css');
 @import url('main.css');
 @import url('footer.css');
+@import url('home.css');
+
+/* Definición de la paleta de colores */
+:root {
+   --color-primary: #155E95;
+   /* Azul profundo */
+   --color-secondary: #6A80B9;
+   /* Azul morado */
+   --color-accent: #F6C794;
+   /* Amarillo cálido */
+   --color-light: #FFF6B3;
+   /* Amarillo claro */
+   --color-text-primary: #333333;
+   /* Texto oscuro */
+   --color-text-secondary: #666666;
+   /* Texto gris */
+}

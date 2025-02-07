@@ -1,0 +1,35 @@
+/* Estilos para la landing page */
+.landing-page {
+   display: flex;
+   justify-content: center;
+   /* Centra horizontalmente */
+   align-items: center;
+   /* Centra verticalmente */
+   height: 100vh;
+   /* Ocupa toda la altura de la ventana */
+   background: var(--color-primary);
+   /* Usa el color de fondo principal */
+}
+
+.profile-image-container {
+   width: 200px;
+   /* Tamaño del contenedor */
+   height: 200px;
+   /* Tamaño del contenedor */
+   border: 5px solid #fff;
+   /* Borde blanco */
+   border-radius: 50%;
+   /* Hace el contenedor circular */
+   overflow: hidden;
+   /* Asegura que la imagen se ajuste al círculo */
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+   /* Sombra para dar profundidad */
+}
+
+.profile-image {
+   width: 100%;
+   /* La imagen ocupa todo el contenedor */
+   height: 100%;
+   object-fit: cover;
+   /* Ajusta la imagen sin deformarla */
+}
