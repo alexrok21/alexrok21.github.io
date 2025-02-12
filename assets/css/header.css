@@ -3,7 +3,8 @@ header {
    background: var(--color-secondary);
    /* Azul morado */
    color: #fff;
-   padding: 1rem;
+   padding: 1.5rem;
+   /* Aumenta el padding para dar más espacio */
 }
 
 .header-container {
@@ -18,19 +19,43 @@ header {
 .logo {
    display: flex;
    align-items: center;
-   /* Alinea el ícono y el texto */
-}
-
-.logo-icon {
-   width: 40px;
-   height: 40px;
-   margin-right: 0.5rem;
+   /* Alinea el texto y el cursor */
 }
 
 .logo-text {
-   font-size: 1.2rem;
+   font-size: 2.5rem;
+   /* Aumenta el tamaño del texto */
    font-weight: bold;
    color: #fff;
+   margin-right: 0.2rem;
+   /* Espacio entre el texto y el cursor */
+}
+
+/* Estilos para el cursor */
+.cursor {
+   font-size: 2.5rem;
+   /* Mismo tamaño que el texto */
+   font-weight: bold;
+   color: #fff;
+   /* Color blanco para el cursor */
+   animation: blink 1s infinite;
+   /* Animación de parpadeo */
+}
+
+/* Animación de parpadeo */
+@keyframes blink {
+
+   0%,
+   50% {
+      opacity: 1;
+      /* Visible */
+   }
+
+   51%,
+   100% {
+      opacity: 0;
+      /* Invisible */
+   }
 }
 
 /* Estilos para el menú de navegación */
