@@ -7,13 +7,25 @@ layout: default
     <!-- Sección Izquierda: Círculo con Orbitales -->
     <div class="orbit-section">
       <div class="orbit-container">
-        <!-- Imagen principal -->
+        <!-- Contenedor de la imagen principal -->
         <div class="profile-image-container">
           <img
             src="/assets/images/fullstack.jpg"
-            alt="Foto de perfil"
-            class="profile-image"
+            alt="Foto de perfil - Fullstack"
+            class="profile-image active"
+            id="profile-fullstack"
           />
+          <img
+            src="/assets/images/me2.jpg"
+            alt="Foto de perfil - Personal"
+            class="profile-image"
+            id="profile-personal"
+          />
+          <!-- Botones circulares para controlar el carrusel -->
+          <div class="carousel-indicators">
+            <button class="indicator active" data-index="0"></button>
+            <button class="indicator" data-index="1"></button>
+          </div>
         </div>
 
         <!-- Círculos orbitales -->
@@ -52,19 +64,44 @@ layout: default
             class="tech-logo"
           />
         </div>
+        <div class="orbit-circle">
+          <img
+            src="/assets/images/techs/ruby.png"
+            alt="Ruby"
+            class="tech-logo"
+          />
+        </div>
       </div>
     </div>
 
     <!-- Sección Derecha: Texto Descriptivo -->
     <div class="text-section">
-      <h1>Hola, soy Alexandro Roca</h1>
-      <p>Desarrollador apasionado por la tecnología y la innovación.</p>
-      <p>
-        Me especializo en construir aplicaciones web modernas y escalables
-        utilizando tecnologías como JavaScript, Node.js, Vue.js, MongoDB y
-        Tailwind CSS.
-      </p>
-      <a href="/about/" class="button">Saber más sobre mí</a>
+      <!-- Texto técnico -->
+      <div class="text-content active" id="text-technical">
+        <h1>Soluciones Software Innovadoras</h1>
+        <p>
+          Desarrollo aplicaciones web modernas y escalables utilizando
+          tecnologías como JavaScript, Node.js, Vue.js, MongoDB y Tailwind CSS.
+        </p>
+        <p>
+          Especializado en construir soluciones eficientes y optimizadas para
+          problemas complejos.
+        </p>
+        <a href="/about/" class="button">Saber más sobre mis proyectos</a>
+      </div>
+
+      <!-- Texto personal -->
+      <div class="text-content" id="text-personal">
+        <h1>Hola, soy Alexandro Roca</h1>
+        <p>
+          Desarrollador de software apasionado por la tecnología y la
+          innovación.
+        </p>
+        <p>
+          Me encanta aprender nuevas tecnologías y resolver problemas creativos.
+        </p>
+        <a href="/about/" class="button">Conoce más sobre mí</a>
+      </div>
     </div>
   </div>
 </div>

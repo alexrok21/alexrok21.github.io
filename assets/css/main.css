@@ -7,9 +7,17 @@ body {
    line-height: 1.6;
    margin: 0;
    padding: 0;
+   display: flex;
+   /* Usar Flexbox */
+   flex-direction: column;
+   /* Colocar elementos en columna */
+   min-height: 100vh;
+   /* Asegurar que el body ocupe toda la altura de la ventana */
 }
 
 main {
+   flex: 1;
+   /* Hacer que el contenido principal ocupe todo el espacio disponible */
    background: none;
    /* Elimina el fondo */
    padding: 0;
