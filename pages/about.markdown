@@ -4,17 +4,19 @@ title: Sobre Mí
 permalink: /about/
 ---
 
-Soy [Tu Nombre], un desarrollador con experiencia en [tecnologías/habilidades]. Me encanta resolver problemas complejos y aprender nuevas tecnologías.
+# Sobre Mí
+
+Hola, soy Alexandro Roca, un desarrollador apasionado por la tecnología y la innovación. Me especializo en construir aplicaciones web modernas y escalables utilizando tecnologías como JavaScript, Node.js, Vue.js, MongoDB y Tailwind CSS.
 
 ### Habilidades
-- Lenguajes: JavaScript, Python, etc.
-- Frameworks: Vue.js, React, etc.
-- Herramientas: Git, Docker, etc.
+- **Lenguajes**: JavaScript, Python, HTML, CSS.
+- **Frameworks**: Vue.js, React, Express.js.
+- **Herramientas**: Git, Docker, Webpack.
 
 ### Educación
-- [Título] - [Universidad] ([Año])
+- **Ingeniería en Informática** - Universidad [Nombre] ([Año])
 
 ### Contacto
-Puedes contactarme a través de [correo electrónico] o en mis redes sociales:
+Puedes contactarme a través de mi correo electrónico: [alexroca2191@gmail.com](mailto:alexroca2191@gmail.com) o en mis redes sociales:
 - [LinkedIn](https://linkedin.com/in/tu-perfil)
-- [GitHub](https://github.com/tu-usuario)
+- [GitHub](https://github.com/alexrok21)

@@ -1,198 +1,200 @@
 /* Contenedor principal */
 .landing-page {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   height: 100vh;
-   background: var(--color-primary);
-   position: relative;
-   overflow: hidden;
-   /* Evita el scroll vertical */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background: var(--color-primary);
+	position: relative;
+	overflow: hidden;
+	/* Evita el scroll vertical */
 }
 
 /* Contenedor de las dos secciones */
 .split-container {
-   display: grid;
-   grid-template-columns: 1fr 1fr;
-   /* Divide la pantalla en dos columnas iguales */
-   width: 90%;
-   /* Ajusta el ancho total */
-   max-width: 1200px;
-   /* Límite máximo para pantallas grandes */
-   gap: 20px;
-   /* Espacio entre las columnas */
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	/* Divide la pantalla en dos columnas iguales */
+	width: 90%;
+	/* Ajusta el ancho total */
+	max-width: 1200px;
+	/* Límite máximo para pantallas grandes */
+	gap: 20px;
+	/* Espacio entre las columnas */
 }
 
 /* Contenedor de la imagen principal */
 .profile-image-container {
-   width: 400px;
-   /* Reduce el tamaño en un 20% */
-   height: 400px;
-   /* Reduce el tamaño en un 20% */
-   border: 6px solid #fff;
-   /* Borde ligeramente más delgado */
-   border-radius: 50%;
-   /* Hace el contenedor circular */
-   overflow: hidden;
-   /* Asegura que la imagen se ajuste al círculo */
-   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
-   /* Sombra más pronunciada */
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%);
-   z-index: 2;
-   /* Asegura que la imagen principal esté encima de los orbitales */
+	width: 450px;
+	/* Reduce el tamaño en un 20% */
+	height: 450px;
+	/* Reduce el tamaño en un 20% */
+	border: 6px solid #fff;
+	/* Borde ligeramente más delgado */
+	border-radius: 50%;
+	/* Hace el contenedor circular */
+	overflow: hidden;
+	/* Asegura que la imagen se ajuste al círculo */
+	box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+	/* Sombra más pronunciada */
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+	/* Asegura que la imagen principal esté encima de los orbitales */
 }
 
 .profile-image {
-   width: 100%;
-   height: 100%;
-   object-fit: cover;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
 }
 
 /* Sección Izquierda: Círculo con Orbitales */
 .orbit-section {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
 }
 
 /* Contenedor de la órbita */
 .orbit-container {
-   position: relative;
-   width: 800px;
-   /* Mantenemos el tamaño del contenedor */
-   height: 800px;
-   /* Mantenemos el tamaño del contenedor */
-   display: flex;
-   justify-content: center;
-   align-items: center;
+	position: relative;
+	width: 800px;
+	/* Mantenemos el tamaño del contenedor */
+	height: 800px;
+	/* Mantenemos el tamaño del contenedor */
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 /* Círculos orbitando */
 .orbit-circle {
-   position: absolute;
-   width: 70px;
-   /* Mantenemos el tamaño */
-   height: 70px;
-   /* Mantenemos el tamaño */
-   border-radius: 50%;
-   background: #fff;
-   /* Cambiamos el fondo a blanco */
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   animation: orbit 20s linear infinite;
-   /* Mantenemos la animación lenta */
-   transform-origin: 50% 50%;
-   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-   /* Añadimos sombra para destacar */
+	position: absolute;
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	background: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	animation: orbit 20s linear infinite;
+	transform-origin: 50% 50%;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+	animation-play-state: paused;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto de zoom al pasar el cursor */
+.orbit-circle:hover {
+	
+    box-shadow: 2px 10px 14px rgba(0, 0, 0, 0.8); /* Sombra más pronunciada */
 }
 
 /* Imágenes dentro de los círculos */
 .tech-logo {
-   width: 60px;
-   /* Mantenemos el tamaño */
-   height: 60px;
-   /* Mantenemos el tamaño */
-   border-radius: 50%;
-   /* Hacemos el borde circular */
-   background: #fff;
-   /* Mantenemos el fondo blanco */
+	width: 60px;
+	/* Mantenemos el tamaño */
+	height: 60px;
+	/* Mantenemos el tamaño */
+	border-radius: 50%;
+	/* Hacemos el borde circular */
+	background: #fff;
+	/* Mantenemos el fondo blanco */
 }
 
 /* Distribuir uniformemente los elementos orbitantes */
 .orbit-circle:nth-child(2) {
-   animation-delay: 0s;
+	animation-delay: 0s;
 }
 
 .orbit-circle:nth-child(3) {
-   animation-delay: -4s;
+	animation-delay: -4s;
 }
 
 .orbit-circle:nth-child(4) {
-   animation-delay: -8s;
+	animation-delay: -8s;
 }
 
 .orbit-circle:nth-child(5) {
-   animation-delay: -12s;
+	animation-delay: -12s;
 }
 
 .orbit-circle:nth-child(6) {
-   animation-delay: -16s;
+	animation-delay: -16s;
 }
 
 /* Animación de órbita */
 @keyframes orbit {
-   from {
-      transform: rotate(0deg) translateX(300px) rotate(0deg);
-   }
+	from {
+		transform: rotate(0deg) translateX(300px) rotate(0deg);
+	}
 
-   to {
-      transform: rotate(360deg) translateX(300px) rotate(-360deg);
-   }
+	to {
+		transform: rotate(360deg) translateX(300px) rotate(-360deg);
+	}
 }
 
 /* Sección Derecha: Texto Descriptivo */
 .text-section {
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: flex-start;
-   /* Alinea el texto a la izquierda */
-   color: #fff;
-   /* Color del texto */
-   text-align: left;
-   /* Alineación del texto */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	/* Alinea el texto a la izquierda */
+	color: #fff;
+	/* Color del texto */
+	text-align: left;
+	/* Alineación del texto */
 }
 
 .text-section h1 {
-   font-size: 2.5rem;
-   margin-bottom: 1rem;
+	font-size: 2.5rem;
+	margin-bottom: 1rem;
 }
 
 .text-section p {
-   font-size: 1.2rem;
-   margin-bottom: 1rem;
+	font-size: 1.2rem;
+	margin-bottom: 1rem;
 }
 
 .text-section .button {
-   background: var(--color-accent);
-   /* Color de fondo del botón */
-   color: var(--color-text-primary);
-   /* Color del texto del botón */
-   border: none;
-   padding: 0.75rem 1.5rem;
-   border-radius: 5px;
-   cursor: pointer;
-   font-size: 1rem;
-   text-decoration: none;
+	background: var(--color-accent);
+	/* Color de fondo del botón */
+	color: var(--color-text-primary);
+	/* Color del texto del botón */
+	border: none;
+	padding: 0.75rem 1.5rem;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 1rem;
+	text-decoration: none;
 }
 
 .text-section .button:hover {
-   background: var(--color-light);
-   /* Cambia el color al pasar el mouse */
+	background: var(--color-light);
+	/* Cambia el color al pasar el mouse */
 }
 
 @media (max-width: 768px) {
+	/* Cambiar a una sola columna en pantallas pequeñas */
+	.split-container {
+		grid-template-columns: 1fr;
+		/* Una sola columna */
+	}
 
-   /* Cambiar a una sola columna en pantallas pequeñas */
-   .split-container {
-      grid-template-columns: 1fr;
-      /* Una sola columna */
-   }
+	/* Reducir el tamaño del contenedor de la órbita */
+	.orbit-container {
+		width: 600px;
+		height: 600px;
+	}
 
-   /* Reducir el tamaño del contenedor de la órbita */
-   .orbit-container {
-      width: 600px;
-      height: 600px;
-   }
-
-   /* Centrar el texto */
-   .text-section {
-      align-items: center;
-      text-align: center;
-   }
+	/* Centrar el texto */
+	.text-section {
+		align-items: center;
+		text-align: center;
+	}
 }
