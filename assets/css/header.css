@@ -4,7 +4,7 @@ header {
    /* Azul morado */
    color: #fff;
    padding: 1.5rem;
-   /* Aumenta el padding para dar más espacio */
+   /* Espaciado para dar más espacio */
 }
 
 .header-container {
@@ -24,7 +24,7 @@ header {
 
 .logo-text {
    font-size: 2.5rem;
-   /* Aumenta el tamaño del texto */
+   /* Tamaño grande para el texto */
    font-weight: bold;
    color: #fff;
    margin-right: 0.2rem;
@@ -61,17 +61,62 @@ header {
 /* Estilos para el menú de navegación */
 .nav-menu {
    display: flex;
-   gap: 1rem;
-   /* Espacio entre los enlaces */
+   gap: 2rem;
+   /* Aumenta el espacio entre los enlaces */
 }
 
 .nav-menu a {
    color: #fff;
+   /* Color del texto */
    text-decoration: none;
-   font-size: 1rem;
+   font-size: 1.2rem;
+   /* Tamaño más grande */
+   padding: 0.5rem 1rem;
+   /* Relleno para hacer los enlaces más grandes */
+   border-radius: 5px;
+   /* Bordes redondeados */
+   position: relative;
+   /* Permite posicionar el guion bajo */
+   transition: background-color 0.3s ease, color 0.3s ease;
+   /* Transición suave */
 }
 
+/* Efecto de iluminación al pasar el cursor */
 .nav-menu a:hover {
-   color: var(--color-accent);
-   /* Amarillo cálido */
+   background-color: var(--color-accent);
+   /* Fondo iluminado */
+   color: var(--color-text-primary);
+   /* Cambia el color del texto */
+}
+
+/* Guion bajo al pasar el cursor */
+.nav-menu a::after {
+   content: "_";
+   position: absolute;
+   font-weight: bold;
+   opacity: 0;
+   right: 3px;
+   /* Ajusta la posición para que quede pegado al texto */
+   transition: opacity 0.3s ease-in-out;
+}
+
+/* Mostrar el guion bajo al hacer hover */
+.nav-menu a:hover::after {
+   opacity: 1;
+   animation: blink 1s infinite;
+   /* Aplica la animación de parpadeo */
+}
+
+/* Animación de parpadeo */
+@keyframes blink {
+
+   0%,
+   50% {
+      opacity: 1;
+   }
+
+   51%,
+   100% {
+      opacity: 0;
+   }
 }
