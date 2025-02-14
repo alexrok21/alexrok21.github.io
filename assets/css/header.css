@@ -3,6 +3,7 @@ header {
    background: var(--color-secondary);
    /* Azul morado */
    color: #fff;
+   /* Color del texto */
    padding: 1.5rem;
    /* Espaciado para dar más espacio */
 }
@@ -10,9 +11,13 @@ header {
 .header-container {
    display: flex;
    justify-content: space-between;
+   /* Espacio entre el logo y el menú */
    align-items: center;
+   /* Alinea verticalmente los elementos */
    max-width: 1200px;
+   /* Ancho máximo para centrar el contenido */
    margin: 0 auto;
+   /* Centra el contenedor */
 }
 
 /* Estilos para el logo */
@@ -22,11 +27,32 @@ header {
    /* Alinea el texto y el cursor */
 }
 
+.logo-link {
+   text-decoration: none;
+   /* Elimina el subrayado del enlace */
+   color: inherit;
+   /* Usa el color del texto del contenedor padre */
+   font-size: 1.5rem;
+   /* Tamaño del título */
+   font-weight: bold;
+   /* Negrita para destacar */
+   cursor: pointer;
+   /* Cambia el cursor al pasar sobre el enlace */
+   transition: color 0.3s ease;
+   /* Transición suave para el color */
+}
+
+.logo-link:hover {
+   color: var(--color-accent);
+   /* Cambia el color al pasar el cursor */
+}
+
 .logo-text {
    font-size: 2.5rem;
    /* Tamaño grande para el texto */
    font-weight: bold;
    color: #fff;
+   /* Color blanco para el texto */
    margin-right: 0.2rem;
    /* Espacio entre el texto y el cursor */
 }
@@ -40,6 +66,16 @@ header {
    /* Color blanco para el cursor */
    animation: blink 1s infinite;
    /* Animación de parpadeo */
+   transition: opacity 0.3s ease;
+   /* Transición suave para desvanecer */
+}
+
+/* Ocultar el cursor del título al pasar sobre un enlace del menú */
+.nav-menu a:hover~.logo .cursor {
+   opacity: 0;
+   /* Desaparece el cursor */
+   animation: none;
+   /* Detiene la animación de parpadeo */
 }
 
 /* Animación de parpadeo */
@@ -62,13 +98,16 @@ header {
 .nav-menu {
    display: flex;
    gap: 2rem;
-   /* Aumenta el espacio entre los enlaces */
+   /* Espacio entre los enlaces */
+   align-items: center;
+   /* Alinea los enlaces verticalmente */
 }
 
 .nav-menu a {
    color: #fff;
    /* Color del texto */
    text-decoration: none;
+   /* Elimina el subrayado */
    font-size: 1.2rem;
    /* Tamaño más grande */
    padding: 0.5rem 1rem;
@@ -92,31 +131,21 @@ header {
 /* Guion bajo al pasar el cursor */
 .nav-menu a::after {
    content: "_";
+   /* Guion bajo */
    position: absolute;
    font-weight: bold;
    opacity: 0;
+   /* Inicialmente invisible */
    right: 3px;
    /* Ajusta la posición para que quede pegado al texto */
    transition: opacity 0.3s ease-in-out;
+   /* Transición suave */
 }
 
 /* Mostrar el guion bajo al hacer hover */
 .nav-menu a:hover::after {
    opacity: 1;
+   /* Hace visible el guion bajo */
    animation: blink 1s infinite;
    /* Aplica la animación de parpadeo */
-}
-
-/* Animación de parpadeo */
-@keyframes blink {
-
-   0%,
-   50% {
-      opacity: 1;
-   }
-
-   51%,
-   100% {
-      opacity: 0;
-   }
 }
