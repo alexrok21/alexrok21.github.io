@@ -14,12 +14,14 @@ layout: default
             alt="Foto de perfil - Fullstack"
             class="profile-image active"
             id="profile-fullstack"
+            loading="lazy"
           />
           <img
             src="/assets/images/me2.jpg"
             alt="Foto de perfil - Personal"
             class="profile-image"
             id="profile-personal"
+            loading="lazy"
           />
           <!-- Botones circulares para controlar el carrusel -->
           <div class="carousel-indicators">
@@ -28,43 +30,234 @@ layout: default
           </div>
         </div>
 
-        <!-- Círculos orbitales -->
-        <div class="orbit-circle">
+        <!-- Círculo orbitales -->
+        <div
+          class="orbit-circle"
+          data-tooltip="
+    <div class='tooltip-container'>
+        <div class='tooltip-header'>
+            <div class='dots'>
+                <span class='dot red'></span>
+                <span class='dot green'></span>
+                <span class='dot yellow'></span>
+                <span class='dot blue'></span>
+            </div>
+        </div>
+        <div class='tooltip-body'>
+            <div class='sidebar'>
+                <div class='sidebar-item' style='width: 80%;'></div>
+                <div class='sidebar-item' style='width: 60%;'></div>
+                <div class='sidebar-item' style='width: 90%;'></div>
+                <div class='sidebar-item' style='width: 70%;'></div>
+            </div>
+            <div class='content'>
+                <strong>Vue.js</strong>
+                Framework moderno y flexible para crear interfaces web dinámicas y eficientes.
+                <ul>
+                    <li>Desarrollo rápido e intuitivo</li>
+                    <li>Escalable y optimizado</li>
+                    <li>Mejora la experiencia del usuario</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+"
+        >
           <img
             src="/assets/images/techs/vue.png"
             alt="Vue.js"
             class="tech-logo"
           />
         </div>
-        <div class="orbit-circle">
+
+        <div
+          class="orbit-circle"
+          data-tooltip="
+    <div class='tooltip-container'>
+        <div class='tooltip-header'>
+            <div class='dots'>
+                <span class='dot red'></span>
+                <span class='dot green'></span>
+                <span class='dot yellow'></span>
+                <span class='dot blue'></span>
+            </div>
+        </div>
+        <div class='tooltip-body'>
+            <div class='sidebar'>
+                <div class='sidebar-item' style='width: 80%;'></div>
+                <div class='sidebar-item' style='width: 60%;'></div>
+                <div class='sidebar-item' style='width: 90%;'></div>
+                <div class='sidebar-item' style='width: 70%;'></div>
+            </div>
+            <div class='content'>
+                <strong>JavaScript</strong>
+                Lenguaje versátil para agregar interactividad y dinamismo a las páginas web.
+                <ul>
+                    <li>Esencial para desarrollo frontend y backend</li>
+                    <li>Compatible con frameworks como Node.js</li>
+                    <li>Ampliamente utilizado en la industria</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+"
+        >
           <img
             src="/assets/images/techs/js.png"
             alt="JavaScript"
             class="tech-logo"
           />
         </div>
-        <div class="orbit-circle">
+
+        <div
+          class="orbit-circle"
+          data-tooltip="
+    <div class='tooltip-container'>
+        <div class='tooltip-header'>
+            <div class='dots'>
+                <span class='dot red'></span>
+                <span class='dot green'></span>
+                <span class='dot yellow'></span>
+                <span class='dot blue'></span>
+            </div>
+        </div>
+        <div class='tooltip-body'>
+            <div class='sidebar'>
+                <div class='sidebar-item' style='width: 80%;'></div>
+                <div class='sidebar-item' style='width: 60%;'></div>
+                <div class='sidebar-item' style='width: 90%;'></div>
+                <div class='sidebar-item' style='width: 70%;'></div>
+            </div>
+            <div class='content'>
+                <strong>Node.js</strong>
+                Entorno de ejecución de JavaScript del lado del servidor para construir aplicaciones escalables.
+                <ul>
+                    <li>Ideal para APIs y microservicios</li>
+                    <li>Alto rendimiento en tiempo real</li>
+                    <li>Comunidad activa y soporte amplio</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+"
+        >
           <img
             src="/assets/images/techs/node.png"
             alt="Node.js"
             class="tech-logo"
           />
         </div>
-        <div class="orbit-circle">
+
+        <div
+          class="orbit-circle"
+          data-tooltip="
+    <div class='tooltip-container'>
+        <div class='tooltip-header'>
+            <div class='dots'>
+                <span class='dot red'></span>
+                <span class='dot green'></span>
+                <span class='dot yellow'></span>
+                <span class='dot blue'></span>
+            </div>
+        </div>
+        <div class='tooltip-body'>
+            <div class='sidebar'>
+                <div class='sidebar-item' style='width: 80%;'></div>
+                <div class='sidebar-item' style='width: 60%;'></div>
+                <div class='sidebar-item' style='width: 90%;'></div>
+                <div class='sidebar-item' style='width: 70%;'></div>
+            </div>
+            <div class='content'>
+                <strong>MongoDB</strong>
+                Base de datos NoSQL orientada a documentos para almacenar y consultar grandes volúmenes de datos.
+                <ul>
+                    <li>Flexible y eficiente</li>
+                    <li>Ideal para aplicaciones modernas</li>
+                    <li>Escalable y confiable</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+"
+        >
           <img
             src="/assets/images/techs/mongodb.png"
             alt="MongoDB"
             class="tech-logo"
           />
         </div>
-        <div class="orbit-circle">
+
+        <div
+          class="orbit-circle"
+          data-tooltip="
+    <div class='tooltip-container'>
+        <div class='tooltip-header'>
+            <div class='dots'>
+                <span class='dot red'></span>
+                <span class='dot green'></span>
+                <span class='dot yellow'></span>
+                <span class='dot blue'></span>
+            </div>
+        </div>
+        <div class='tooltip-body'>
+            <div class='sidebar'>
+                <div class='sidebar-item' style='width: 80%;'></div>
+                <div class='sidebar-item' style='width: 60%;'></div>
+                <div class='sidebar-item' style='width: 90%;'></div>
+                <div class='sidebar-item' style='width: 70%;'></div>
+            </div>
+            <div class='content'>
+                <strong>Tailwind CSS</strong>
+                Framework de diseño utilitario para crear interfaces modernas y personalizadas.
+                <ul>
+                    <li>Rápido y flexible</li>
+                    <li>Sin comprometer el diseño</li>
+                    <li>Fácil de integrar</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+"
+        >
           <img
             src="/assets/images/techs/tailwind.png"
             alt="Tailwind CSS"
             class="tech-logo"
           />
         </div>
-        <div class="orbit-circle">
+
+        <div
+          class="orbit-circle"
+          data-tooltip="
+    <div class='tooltip-container'>
+        <div class='tooltip-header'>
+            <div class='dots'>
+                <span class='dot red'></span>
+                <span class='dot green'></span>
+                <span class='dot yellow'></span>
+                <span class='dot blue'></span>
+            </div>
+        </div>
+        <div class='tooltip-body'>
+            <div class='sidebar'>
+                <div class='sidebar-item' style='width: 80%;'></div>
+                <div class='sidebar-item' style='width: 60%;'></div>
+                <div class='sidebar-item' style='width: 90%;'></div>
+                <div class='sidebar-item' style='width: 70%;'></div>
+            </div>
+            <div class='content'>
+                <strong>Ruby</strong>
+                Lenguaje elegante y expresivo para desarrollar aplicaciones web robustas.
+                <ul>
+                    <li>Ideal para proyectos ágiles</li>
+                    <li>Frameworks como Ruby on Rails</li>
+                    <li>Fácil de aprender y usar</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+"
+        >
           <img
             src="/assets/images/techs/ruby.png"
             alt="Ruby"
@@ -108,4 +301,4 @@ layout: default
     </div>
   </div>
 </div>
-<script src="/assets/js/scripts.js"></script>
+<script src="/assets/js/scripts.js" defer></script>

@@ -7,6 +7,9 @@ const indicators = document.querySelectorAll(".indicator");
 const navLinks = document.querySelectorAll(".nav-menu a");
 const logoCursor = document.querySelector(".logo .cursor");
 
+// Seleccionar todos los círculos orbitales
+const orbitCircles = document.querySelectorAll(".orbit-circle");
+
 let currentIndex = 0; // Índice actual del carrusel
 
 // Función para cambiar al perfil especificado
@@ -49,6 +52,37 @@ navLinks.forEach((link) => {
   link.addEventListener("mouseleave", () => {
     logoCursor.style.opacity = "1"; // Muestra el cursor del título
     logoCursor.style.animation = "blink 1s infinite"; // Reactiva la animación
+  });
+});
+
+// Crear un elemento tooltip
+const tooltip = document.createElement("div");
+tooltip.classList.add("tooltip");
+document.body.appendChild(tooltip);
+
+// Añadir eventos para mostrar el tooltip
+orbitCircles.forEach((circle) => {
+  circle.addEventListener("mouseenter", () => {
+    const tooltipHTML = circle.getAttribute("data-tooltip"); // Obtener el contenido HTML
+    tooltip.innerHTML = tooltipHTML; // Insertar el contenido como HTML
+
+    // Posicionar el tooltip cerca del círculo
+    const rect = circle.getBoundingClientRect();
+    tooltip.style.top = `${
+      rect.top + window.scrollY - tooltip.offsetHeight - 15
+    }px`; // Ajuste de posición
+    tooltip.style.left = `${
+      rect.left +
+      window.scrollX +
+      circle.offsetWidth / 2 -
+      tooltip.offsetWidth / 2
+    }px`;
+
+    tooltip.style.opacity = "1"; // Hacer visible el tooltip
+  });
+
+  circle.addEventListener("mouseleave", () => {
+    tooltip.style.opacity = "0"; // Ocultar el tooltip
   });
 });
 

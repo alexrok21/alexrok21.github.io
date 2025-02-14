@@ -149,6 +149,153 @@
 	animation-delay: -16.66s;
 }
 
+/* Contenedor principal del tooltip */
+.tooltip {
+	position: absolute;
+	background: #0f172a;
+	/* Fondo azul oscuro */
+	color: #60a5fa;
+	/* Texto azul claro */
+	padding: 15px;
+	border-radius: 8px;
+	/* Bordes redondeados */
+	font-size: 0.9rem;
+	line-height: 1.4;
+	white-space: normal;
+	max-width: 400px;
+	/* Ancho máximo */
+	pointer-events: none;
+	opacity: 0;
+	transform: translateY(-10px);
+	transition: opacity 0.3s ease, transform 0.3s ease;
+	z-index: 1000;
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+	/* Sombra suave */
+	border: 1px solid #1e293b;
+	/* Borde sutil */
+}
+
+/* Contenedor interno del tooltip */
+.tooltip-container {
+	display: flex;
+	flex-direction: column;
+	/* Apila los elementos verticalmente */
+}
+
+/* Barra superior con puntos de colores */
+.tooltip-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: #1e293b;
+	/* Fondo oscuro */
+	padding: 5px 10px;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	margin-bottom: 10px;
+	/* Espaciado entre el header y el body */
+}
+
+.tooltip-header .dots {
+	display: flex;
+	gap: 5px;
+}
+
+.tooltip-header .dot {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+}
+
+.tooltip-header .dot.red {
+	background: #ef4444;
+	/* Rojo */
+}
+
+.tooltip-header .dot.green {
+	background: #22c55e;
+	/* Verde */
+}
+
+.tooltip-header .dot.yellow {
+	background: #facc15;
+	/* Amarillo */
+}
+
+.tooltip-header .dot.blue {
+	background: #60a5fa;
+	/* Azul */
+}
+
+/* Cuerpo del tooltip (barra lateral + contenido) */
+.tooltip-body {
+	display: flex;
+	gap: 15px;
+	/* Espacio entre la barra lateral y el contenido */
+}
+
+/* Barra lateral izquierda */
+.sidebar {
+	width: 30%;
+	/* Anchura de la barra lateral */
+	background: #1e293b;
+	/* Color más oscuro para la barra */
+	border-radius: 8px;
+	/* Redondeado */
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	/* Espaciado entre los rectángulos */
+}
+
+.sidebar-item {
+	width: 100%;
+	/* Ocupa todo el ancho */
+	height: 5px;
+	/* Altura de los rectángulos */
+	background: #60a5fa;
+	/* Azul claro */
+	border-radius: 2px;
+	/* Bordes redondeados */
+}
+
+/* Contenido principal */
+.content {
+	flex-grow: 1;
+	/* Ocupa el espacio restante */
+	color: #d4d4d4;
+	/* Texto gris claro */
+}
+
+.content strong {
+	color: #ffffff;
+	/* Títulos en blanco */
+	font-size: 1rem;
+	display: block;
+	margin-bottom: 5px;
+}
+
+.content ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.content li {
+	margin-bottom: 5px;
+	display: flex;
+	align-items: center;
+	gap: 5px;
+}
+
+.content li::before {
+	content: '✅';
+	/* Ícono de viñeta */
+	color: #22c55e;
+	/* Verde */
+}
+
 /* Indicadores del carrusel */
 .carousel-indicators {
 	display: flex;
