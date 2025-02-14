@@ -25,12 +25,6 @@ function changeProfile(index) {
   indicators[currentIndex].classList.add("active");
 }
 
-// Cambiar de perfil automáticamente cada 10 segundos
-// setInterval(() => {
-//   const nextIndex = (currentIndex + 1) % profileImages.length;
-//   changeProfile(nextIndex);
-// }, 10000);
-
 // Añadir eventos a los botones
 indicators.forEach((indicator, index) => {
   indicator.addEventListener("click", () => {
