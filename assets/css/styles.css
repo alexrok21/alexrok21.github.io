@@ -6,17 +6,40 @@
 @import url('about.css');
 
 /* Definición de la paleta de colores */
+/* :root {
+   --color-primary: #3674B5;
+   --color-secondary: #578FCA;
+   --color-accent: #A1E3F9;
+   --color-light: #D1F8EF;
+   --color-background: #F8F9FA;
+   --color-text-primary: #2C3E50;
+   --color-text-secondary: #6C757D;
+} */
+
+/* ganando pero necesita mejoras*/
+/* :root {
+   --color-primary: #0B2447;
+   --color-secondary: #19376D;
+   --color-accent: #576CBC;
+   --color-highlight: #A5D7E8;
+   --color-background: #F8F9FA;
+   --color-text-primary: #0B2447;
+   --color-text-secondary: #576CBC;
+} */
+
 :root {
-   --color-primary: #155E95;
-   /* Azul profundo */
-   --color-secondary: #6A80B9;
-   /* Azul morado */
-   --color-accent: #F6C794;
-   /* Amarillo cálido */
-   --color-light: #FFF6B3;
-   /* Amarillo claro */
+   --color-primary: #48466D;
+   /* Azul profundo, aporta profesionalismo y confianza */
+   --color-secondary: #3D84A8;
+   /* Azul vibrante, da un toque moderno y tecnológico */
+   --color-accent: #46CDCF;
+   /* Turquesa fresco, genera dinamismo y creatividad */
+   --color-highlight: #ABEDD8;
+   /* Verde menta suave, equilibra y aporta frescura */
+   --color-background: #F5F5F5;
+   /* Blanco suave, ideal para mantener limpieza */
    --color-text-primary: #333333;
-   /* Texto oscuro */
-   --color-text-secondary: #666666;
-   /* Texto gris */
+   /* Gris oscuro para buen contraste y legibilidad */
+   --color-text-secondary: #3D84A8;
+   /* Azul vibrante para detalles y énfasis */
 }
