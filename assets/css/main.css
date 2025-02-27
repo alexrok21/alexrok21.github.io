@@ -1,68 +1,58 @@
 /* Estilos generales */
 body {
-   background: var(--color-primary);
-   /* Fondo principal */
+   background: var(--color-background);
+   /* Fondo claro para mayor contraste */
    color: var(--color-text-primary);
+   /* Color de texto principal */
    font-family: Arial, sans-serif;
    line-height: 1.6;
    margin: 0;
    padding: 0;
    display: flex;
-   /* Usar Flexbox */
    flex-direction: column;
-   /* Colocar elementos en columna */
    min-height: 100vh;
-   /* Asegurar que el body ocupe toda la altura de la ventana */
 }
 
-main {
-   flex: 1;
-   /* Hacer que el contenido principal ocupe todo el espacio disponible */
-   background: none;
-   /* Elimina el fondo */
-   padding: 0;
-   /* Elimina el relleno */
-   margin: 0;
-   /* Elimina el margen */
-   box-shadow: none;
-   /* Elimina la sombra */
-   max-width: none;
-   /* Elimina el ancho máximo */
-}
-
-/* Estilos para el contenedor de la página */
+/* Contenedor principal */
 .page-container {
    display: flex;
    flex-direction: column;
-   /* Coloca los elementos en columna */
    min-height: 100vh;
-   /* Asegura que el contenedor ocupe toda la altura de la ventana */
 }
 
-/* Estilos para el contenido principal */
+.page-content {
+   background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+   min-height: 100vh;
+   /* Asegura que cubra toda la pantalla */
+   padding: 20px;
+}
+
+/* Contenido principal */
 .content {
    flex: 1;
-   /* Hace que el contenido ocupe todo el espacio disponible */
 }
 
 /* Botones */
 button,
 .button {
    background: var(--color-accent);
-   /* Amarillo cálido */
-   color: var(--color-text-primary);
+   /* Azul vibrante */
+   color: var(--color-background);
+   /* Texto en color claro */
    border: none;
    padding: 0.5rem 1rem;
    border-radius: 5px;
    cursor: pointer;
    font-size: 1rem;
+   transition: background 0.3s ease;
 }
 
 button:hover,
 .button:hover {
-   background: var(--color-light);
-   /* Amarillo claro */
+   background: var(--color-highlight);
+   /* Celeste claro para hover */
    color: var(--color-text-primary);
+   /* Mantiene legibilidad */
 }
 
 /* Textos secundarios */

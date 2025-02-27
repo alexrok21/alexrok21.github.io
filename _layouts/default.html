@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{ page.title }} | {{ site.title }}</title>
+
     <style>
+      /* Estilos mínimos en línea para evitar flashes blancos */
+      html,
       body {
         background: #155e95; /* Color de fondo principal */
         margin: 0;
@@ -19,18 +22,19 @@
       }
     </style>
 
-    <!-- Preload para cargar el CSS crítico -->
+    <!-- Preload del CSS principal con fallback para navegadores antiguos -->
     <link
       rel="preload"
       href="{{ '/assets/css/styles.css' | relative_url }}"
       as="style"
       onload="this.onload=null;this.rel='stylesheet'"
     />
-    <noscript
-      ><link
+    <noscript>
+      <link
         rel="stylesheet"
         href="{{ '/assets/css/styles.css' | relative_url }}"
-    /></noscript>
+      />
+    </noscript>
   </head>
   <body>
     <!-- Incluir el encabezado -->

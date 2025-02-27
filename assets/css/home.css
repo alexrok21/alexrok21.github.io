@@ -8,6 +8,8 @@
 	position: relative;
 	overflow: hidden;
 	/* Evita el scroll vertical */
+	color: var(--color-text-primary);
+	/* Asegurar que el texto sea legible */
 }
 
 /* Contenedor de las dos secciones */
@@ -410,11 +412,12 @@
 	/* Animación de entrada */
 }
 
+/* Botón de acción */
 .text-section .button {
 	background: var(--color-accent);
 	/* Color de fondo del botón */
-	color: var(--color-text-primary);
-	/* Color del texto del botón */
+	color: var(--color-light);
+	/* Mejor contraste con un color más claro */
 	border: none;
 	padding: 0.75rem 1.5rem;
 	border-radius: 5px;
@@ -429,9 +432,12 @@
 	/* Animación de entrada */
 }
 
+/* Hover */
 .text-section .button:hover {
-	background: var(--color-light);
-	/* Cambia el color al pasar el mouse */
+	background: var(--color-secondary);
+	/* Color secundario en hover */
+	color: var(--color-light);
+	/* Asegurar contraste */
 }
 
 /* Contenedor común para los bloques de texto */

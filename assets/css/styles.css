@@ -5,41 +5,19 @@
 @import url('home.css');
 @import url('about.css');
 
-/* Definición de la paleta de colores */
-/* :root {
-   --color-primary: #3674B5;
-   --color-secondary: #578FCA;
-   --color-accent: #A1E3F9;
-   --color-light: #D1F8EF;
-   --color-background: #F8F9FA;
-   --color-text-primary: #2C3E50;
-   --color-text-secondary: #6C757D;
-} */
-
-/* ganando pero necesita mejoras*/
-/* :root {
-   --color-primary: #0B2447;
-   --color-secondary: #19376D;
-   --color-accent: #576CBC;
-   --color-highlight: #A5D7E8;
-   --color-background: #F8F9FA;
-   --color-text-primary: #0B2447;
-   --color-text-secondary: #576CBC;
-} */
-
 :root {
-   --color-primary: #48466D;
-   /* Azul profundo, aporta profesionalismo y confianza */
-   --color-secondary: #3D84A8;
-   /* Azul vibrante, da un toque moderno y tecnológico */
-   --color-accent: #46CDCF;
-   /* Turquesa fresco, genera dinamismo y creatividad */
-   --color-highlight: #ABEDD8;
-   /* Verde menta suave, equilibra y aporta frescura */
-   --color-background: #F5F5F5;
-   /* Blanco suave, ideal para mantener limpieza */
-   --color-text-primary: #333333;
-   /* Gris oscuro para buen contraste y legibilidad */
-   --color-text-secondary: #3D84A8;
-   /* Azul vibrante para detalles y énfasis */
+   --color-primary: #0B2447;
+   /* Azul oscuro profundo, serio y profesional */
+   --color-secondary: #19376D;
+   /* Azul medio, aporta modernidad y tecnología */
+   --color-accent: #576CBC;
+   /* Azul vibrante, usado para resaltar elementos clave */
+   --color-highlight: #A5D7E8;
+   /* Celeste claro, fresco y amigable */
+   --color-background: #F8F9FA;
+   /* Blanco grisáceo, mantiene limpieza y elegancia */
+   --color-text-primary: #1B1B1B;
+   /* Negro suave, mejora legibilidad sobre fondos claros */
+   --color-text-secondary: #2F4F75;
+   /* Azul grisáceo, más oscuro para mejor contraste */
 }

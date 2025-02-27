@@ -53,8 +53,7 @@
 }
 
 .contact-buttons a:hover {
-   background: var(--color-light);
-   /* Amarillo claro */
+   background: var(--color-highlight);
 }
 
 /* Textos secundarios */
@@ -70,7 +69,8 @@
    flex-direction: column;
    align-items: center;
    gap: 20px;
-   padding: 20px;
+   padding: 40px;
+   border-radius: 10px;
    max-width: 800px;
    margin: 0 auto;
 }
@@ -78,13 +78,17 @@
 /* Estilo de las tarjetas */
 .card {
    display: flex;
-   align-items: flex-start;
+   align-items: center;
+   /* Centra verticalmente la imagen y el contenido */
    gap: 20px;
-   background: var(--color-light);
+   background: var(--color-secondary);
    padding: 20px;
    border-radius: 10px;
    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
    width: 100%;
+   max-width: 80%;
+   height: 250px;
+   /* Mantiene todas las tarjetas iguales */
    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -93,29 +97,45 @@
    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* Ícono de la tarjeta */
+.card-icon {
+   flex-shrink: 0;
+   /* Evita que la imagen cambie de tamaño */
+   width: 80px;
+   /* Ajusta según necesites */
+   height: 80px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
 .card-icon img {
-   width: 50px;
-   height: 50px;
+   width: 100%;
+   height: 100%;
    object-fit: cover;
+   border-radius: 5px;
 }
 
 /* Contenido de la tarjeta */
 .card-content {
-   flex: 1;
+   flex-grow: 1;
+   /* Asegura que el contenido ocupe todo el espacio restante */
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   /* Centra verticalmente */
 }
 
 .card-content h2 {
    font-size: 1.5rem;
    margin-bottom: 10px;
-   color: var(--color-primary);
+   color: var(--color-accent);
 }
 
 .card-content p,
 .card-content ul {
    font-size: 1rem;
    line-height: 1.6;
-   color: var(--color-text-primary);
+   color: var(--color-highlight);
 }
 
 .card-content ul {
@@ -125,4 +145,16 @@
 
 .card-content ul li {
    margin-bottom: 5px;
+}
+
+.card:nth-child(odd) {
+   align-self: flex-start;
+   margin-left: 0;
+   margin-right: auto;
+}
+
+.card:nth-child(even) {
+   align-self: flex-end;
+   margin-right: 0;
+   margin-left: auto;
 }
