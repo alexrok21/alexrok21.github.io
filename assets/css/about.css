@@ -71,7 +71,8 @@
    gap: 20px;
    padding: 40px;
    border-radius: 10px;
-   max-width: 800px;
+   max-width: 960px;
+   /* Nuevo ancho (20% más) */
    margin: 0 auto;
 }
 
@@ -79,7 +80,6 @@
 .card {
    display: flex;
    align-items: center;
-   /* Centra verticalmente la imagen y el contenido */
    gap: 20px;
    background: var(--color-secondary);
    padding: 20px;
@@ -87,8 +87,7 @@
    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
    width: 100%;
    max-width: 80%;
-   height: 250px;
-   /* Mantiene todas las tarjetas iguales */
+   height: 300px;
    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -99,10 +98,12 @@
 
 .card-icon {
    flex-shrink: 0;
-   /* Evita que la imagen cambie de tamaño */
-   width: 80px;
-   /* Ajusta según necesites */
-   height: 80px;
+   width: 25%;
+   /* Nuevo ancho (25% del ancho de la tarjeta) */
+   height: auto;
+   /* Mantener la proporción del alto */
+   aspect-ratio: 1 / 1;
+   /* Asegura que el ícono sea cuadrado */
    display: flex;
    align-items: center;
    justify-content: center;

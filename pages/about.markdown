@@ -8,7 +8,7 @@ permalink: /about/
     <!-- Tarjeta 1: Presentación -->
     <div class="card">
         <div class="card-icon">
-            <img src="/assets/images/icons/profile.svg" alt="Ícono de perfil" />
+            <img src="/assets/images/icons/about_me.jpg" alt="Ícono de perfil" />
         </div>
         <div class="card-content">
             <h2>Sobre Mí</h2>
@@ -34,7 +34,7 @@ permalink: /about/
     <!-- Tarjeta 3: Tecnologías Principales -->
     <div class="card">
         <div class="card-icon">
-            <img src="/assets/images/icons/tech.svg" alt="Ícono de tecnología" />
+            <img src="/assets/images/icons/technologies.jpg" alt="Ícono de tecnología" />
         </div>
         <div class="card-content">
             <h2>Tecnologías Principales</h2>
