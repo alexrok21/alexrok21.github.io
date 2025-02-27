@@ -62,19 +62,47 @@
 })();
 
 // Módulo 2: Interacciones del Menú
-(function menuModule() {
-  const navLinks = document.querySelectorAll(".nav-menu a");
-  const logoCursor = document.querySelector(".logo .cursor");
+// (function menuModule() {
+//   const navLinks = document.querySelectorAll(".nav-menu a");
+//   const logoCursor = document.querySelector(".logo .cursor");
 
-  // Añadir eventos a los enlaces del menú
-  navLinks.forEach((link) => {
-    link.addEventListener("mouseenter", () => {
-      logoCursor.style.opacity = "0"; // Oculta el cursor del título
-      logoCursor.style.animation = "none"; // Detiene la animación
-    });
-    link.addEventListener("mouseleave", () => {
-      logoCursor.style.opacity = "1"; // Muestra el cursor del título
-      logoCursor.style.animation = "blink 1s infinite"; // Reactiva la animación
+//   // Añadir eventos a los enlaces del menú
+//   navLinks.forEach((link) => {
+//     link.addEventListener("mouseenter", () => {
+//       logoCursor.style.opacity = "0"; // Oculta el cursor del título
+//       logoCursor.style.animation = "none"; // Detiene la animación
+//     });
+//     link.addEventListener("mouseleave", () => {
+//       logoCursor.style.opacity = "1"; // Muestra el cursor del título
+//       logoCursor.style.animation = "blink 1s infinite"; // Reactiva la animación
+//     });
+//   });
+// })();
+
+(function menuModule() {
+  // Espera a que el DOM esté completamente cargado
+  document.addEventListener("DOMContentLoaded", () => {
+    const navLinks = document.querySelectorAll(".nav-menu a");
+    const logoCursor = document.querySelector(".logo .cursor");
+
+    if (!logoCursor) {
+      console.error("El elemento .logo .cursor no fue encontrado.");
+      return;
+    }
+
+    // Añadir eventos a los enlaces del menú
+    navLinks.forEach((link) => {
+      link.addEventListener("mouseenter", () => {
+        logoCursor.style.opacity = "0"; // Oculta el cursor del título
+        logoCursor.style.animation = "none"; // Detiene la animación
+      });
+
+      link.addEventListener("mouseleave", () => {
+        logoCursor.style.opacity = "1"; // Muestra el cursor del título
+        setTimeout(() => {
+          logoCursor.style.animation = "blink 1s infinite"; // Reactiva la animación
+        }, 10); // Pequeño retraso para evitar problemas de renderizado
+      });
     });
   });
 })();
