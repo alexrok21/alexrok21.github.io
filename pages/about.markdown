@@ -21,7 +21,7 @@ permalink: /about/
     <!-- Tarjeta 2: Experiencia -->
     <div class="card">
         <div class="card-icon">
-            <img src="/assets/images/icons/experience.svg" alt="Ícono de experiencia" />
+            <img src="/assets/images/icons/work_experience.jpg" alt="Ícono de experiencia" />
         </div>
         <div class="card-content">
             <h2>Experiencia</h2>
@@ -50,7 +50,7 @@ permalink: /about/
     <!-- Tarjeta 4: Formación -->
     <div class="card">
         <div class="card-icon">
-            <img src="/assets/images/icons/education.svg" alt="Ícono de educación" />
+            <img src="/assets/images/icons/education.jpg" alt="Ícono de educación" />
         </div>
         <div class="card-content">
             <h2>Formación</h2>
@@ -63,7 +63,7 @@ permalink: /about/
     <!-- Tarjeta 5: Habilidades -->
     <div class="card">
         <div class="card-icon">
-            <img src="/assets/images/icons/skills.svg" alt="Ícono de habilidades" />
+            <img src="/assets/images/icons/skills.jpg" alt="Ícono de habilidades" />
         </div>
         <div class="card-content">
             <h2>Habilidades</h2>
@@ -78,7 +78,7 @@ permalink: /about/
     <!-- Tarjeta 6: Filosofía de Trabajo -->
     <div class="card">
         <div class="card-icon">
-            <img src="/assets/images/icons/philosophy.svg" alt="Ícono de filosofía" />
+            <img src="/assets/images/icons/philosophy.jpg" alt="Ícono de filosofía" />
         </div>
         <div class="card-content">
             <h2>Filosofía de Trabajo</h2>
@@ -93,7 +93,7 @@ permalink: /about/
     <!-- Tarjeta 7: Hobbies -->
     <div class="card">
         <div class="card-icon">
-            <img src="/assets/images/icons/hobbies.svg" alt="Ícono de hobbies" />
+            <img src="/assets/images/icons/hobbies.jpg" alt="Ícono de hobbies" />
         </div>
         <div class="card-content">
             <h2>Hobbies</h2>
@@ -106,7 +106,7 @@ permalink: /about/
     <!-- Tarjeta 8: Contacto -->
     <div class="card">
         <div class="card-icon">
-            <img src="/assets/images/icons/contact.svg" alt="Ícono de contacto" />
+            <img src="/assets/images/icons/contact.jpg" alt="Ícono de contacto" />
         </div>
         <div class="card-content">
             <h2>Contacto</h2>
