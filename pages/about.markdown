@@ -55,7 +55,7 @@ permalink: /about/
         <div class="card-content">
             <h2>Formación</h2>
             <p>
-                Graduado como <strong>Tecnólogo en Informática</strong> (2015) en la Facultad de Ingeniería (Udelar) y la ex UTU. Además, continúo aprendiendo con cursos especializados en Angular, Node.js, Flutter y más.
+                Graduado como <strong>Tecnólogo en Informática</strong> (2015) en la Facultad de Ingeniería (Udelar) y la ex UTU. Además, continúo siempre continúo aprendiendo.
             </p>
         </div>
     </div>
@@ -84,8 +84,8 @@ permalink: /about/
             <h2>Filosofía de Trabajo</h2>
             <ul>
                 <li>🔹 <strong>Dedicación:</strong> Aprendizaje continuo para ofrecer soluciones innovadoras.</li>
-                <li>🔹 <strong>Amabilidad:</strong> Comunicación efectiva con clientes y equipos.</li>
                 <li>🔹 <strong>Comprensión:</strong> Enfoque en soluciones prácticas y funcionales.</li>
+                <li>🔹 <strong>Amabilidad:</strong> Comunicación efectiva con clientes y equipos.</li>
             </ul>
         </div>
     </div>
@@ -98,7 +98,7 @@ permalink: /about/
         <div class="card-content">
             <h2>Hobbies</h2>
             <p>
-                🎮 Videojuegos | ⚽ Fútbol | 🏋️‍♂️ Entrenamiento | ✈️ Viajar (Argentina, Chile, Uruguay, Irlanda, Madrid, París)
+                🎮 Videojuegos | ⚽ Fútbol | 🏋️‍♂️ Entrenamiento | ✈️ Viajar
             </p>
         </div>
     </div>
