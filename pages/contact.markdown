@@ -4,8 +4,48 @@ title: Contacto
 permalink: /contact/
 ---
 
-¿Quieres ponerte en contacto? Puedes hacerlo a través de:
+<section class="contact-container">
+    <h2 class="contact-title">Ponte en contacto</h2>
+    <h3 class="contact-subtitle">CONTACTO</h3>
 
-- Correo electrónico: [tu-email@example.com](mailto:tu-email@example.com)
-- LinkedIn: [Mi perfil](https://linkedin.com/in/tu-perfil)
-- GitHub: [Mi perfil](https://github.com/tu-usuario)
+    <div class="contact-content">
+        <!-- Información de contacto -->
+        <div class="contact-info">
+            <div class="contact-item">
+                <span class="icon">📞</span>
+                <p>+598 99887589</p>
+            </div>
+            <div class="contact-item">
+                <span class="icon">📧</span>
+                <p>alexroca2191@gmail.com</p>
+            </div>
+            <div class="contact-item">
+                <span class="icon">📍</span>
+                <p>Montevideo, Uruguay (GMT-3)</p>
+            </div>
+        </div>
+
+        <!-- Formulario -->
+        <form action="https://formspree.io/f/mrbenpqo" method="POST" class="contact-form">
+            <input type="text" name="name" placeholder="Tu nombre" required>
+            <input type="email" name="email" placeholder="Tu correo" required>
+            <textarea name="message" placeholder="Tu mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <div class="social-icons">
+        <a href="https://github.com/tuusuario" target="_blank" class="social-icon">
+            <img src="/assets/images/social/github.png" alt="GitHub">
+        </a>
+        <a href="https://linkedin.com/in/tuusuario" target="_blank" class="social-icon">
+            <img src="/assets/images/social/linkedin.png" alt="LinkedIn">
+        </a>
+        <a href="https://twitter.com/tuusuario" target="_blank" class="social-icon">
+            <img src="/assets/images/social/instagram.png" alt="Instagram">
+        </a>
+    </div>
+
+</section>
+
+

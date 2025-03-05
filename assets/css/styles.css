@@ -4,6 +4,7 @@
 @import url('footer.css');
 @import url('home.css');
 @import url('about.css');
+@import url('contact.css');
 
 :root {
    --color-primary: #0B2447;
