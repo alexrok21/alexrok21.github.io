@@ -151,3 +151,17 @@
    transform: scale(1.2);
    opacity: 0.8;
 }
+
+.contact-item a {
+   color: var(--color-text-primary);
+   /* Cambia esto por el color que prefieras */
+   text-decoration: none;
+   /* Elimina el subrayado */
+}
+
+.contact-item a:hover {
+   color: var(--color-secondary);
+   /* Color en hover, puedes ajustarlo */
+   text-decoration: underline;
+   /* Si quieres que se subraye al pasar el mouse */
+}

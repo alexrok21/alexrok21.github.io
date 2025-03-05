@@ -21,8 +21,9 @@ permalink: /contact/
             </div>
             <div class="contact-item">
                 <span class="icon">📍</span>
-                <p>Montevideo, Uruguay (GMT-3)</p>
+                <p><a href="https://www.google.com/maps?q=Montevideo,+Uruguay" target="_blank">Montevideo, Uruguay (GMT-3)</a></p>
             </div>
+
         </div>
 
         <!-- Formulario -->
@@ -35,13 +36,13 @@ permalink: /contact/
     </div>
 
     <div class="social-icons">
-        <a href="https://github.com/tuusuario" target="_blank" class="social-icon">
+        <a href="https://github.com/alexrok21" target="_blank" class="social-icon">
             <img src="/assets/images/social/github.png" alt="GitHub">
         </a>
-        <a href="https://linkedin.com/in/tuusuario" target="_blank" class="social-icon">
+        <a href="https://linkedin.com/in/alexandro-roca-911b76133" target="_blank" class="social-icon">
             <img src="/assets/images/social/linkedin.png" alt="LinkedIn">
         </a>
-        <a href="https://twitter.com/tuusuario" target="_blank" class="social-icon">
+        <a href="https://www.instagram.com/a_rock91" target="_blank" class="social-icon">
             <img src="/assets/images/social/instagram.png" alt="Instagram">
         </a>
     </div>
