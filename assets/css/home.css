@@ -10,6 +10,7 @@
 	/* Evita el scroll vertical */
 	color: var(--color-text-primary);
 	/* Asegurar que el texto sea legible */
+	width: 90%;
 }
 
 /* Contenedor de las dos secciones */
