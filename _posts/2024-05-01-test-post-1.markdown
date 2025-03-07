@@ -1,0 +1,15 @@
+---
+layout: post
+title: "Prueba 1: Markdown y Estilos"
+date: 2024-05-01
+category: Ejemplos
+tags:
+  - Prueba
+  - Markdown
+image: "/assets/images/blog/image2.webp"
+---
+
+Este es un post de prueba para ver cómo se renderiza el contenido con **Markdown** y estilos.
+
+```python
+print("Hola desde un bloque de código")

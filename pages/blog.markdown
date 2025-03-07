@@ -4,8 +4,6 @@ title: Blog
 permalink: /blog/
 ---
 
-<h2>Últimas publicaciones</h2>
-
 <div class="blog-list">
   {% for post in site.posts %}
     <div class="blog-card {% if post.image %}has-image{% endif %}">
@@ -24,7 +22,7 @@ permalink: /blog/
         <!-- Flecha solo si no hay imagen -->
         {% unless post.image %}
           <a href="{{ post.url }}" class="read-arrow read-arrow-text">
-            <i class="fas fa-arrow-right"></i>
+            <i class="fas fa-angle-right"></i>
           </a>
         {% endunless %}
       </div>
@@ -34,11 +32,11 @@ permalink: /blog/
         <div class="blog-image-container">
           <img src="{{ post.image }}" alt="{{ post.title }}" class="blog-image">
           <a href="{{ post.url }}" class="read-arrow read-arrow-image">
-            <i class="fas fa-arrow-right"></i>
+            <i class="fas fa-angle-right"></i>
           </a>
-        </div>
+      </div>
       {% endif %}
-    </div>
+      </div>
 
 {% endfor %}
 

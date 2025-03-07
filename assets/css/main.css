@@ -13,12 +13,12 @@ body {
    min-height: 100vh;
 }
 
-.page-content {
+.page-content-default {
    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
    min-height: 100vh;
-   /* Asegura que cubra toda la pantalla */
    display: flex;
    flex-direction: column;
+   justify-content: center;
 }
 
 

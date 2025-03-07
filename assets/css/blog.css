@@ -1,11 +1,13 @@
 /* Estilos específicos para la página de blog */
 .blog-list {
-	display: flex;
-	flex-direction: column;
-	gap: 20px;
-	padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 0;
+  padding-bottom: 2rem;
 }
 
+/* Contenedor principal de la tarjeta */
 .blog-card {
   display: flex;
   align-items: center;
@@ -14,13 +16,13 @@
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  position: relative; /* Asegura que el contenedor sea referencia para posiciones absolutas */
+  position: relative; /* Para posicionar absolutamente elementos hijos */
 }
 
 /* Contenido principal (textos) */
 .blog-content {
-  flex-grow: 1; /* Ocupa el espacio disponible */
-  margin-right: 0 !important; /* Elimina márgenes conflictivos */
+  flex: 1; /* Ocupa el espacio disponible */
+  margin-right: auto; /* Empuja el contenido hacia la izquierda */
 }
 
 /* Flecha genérica */
@@ -39,17 +41,25 @@
 	background-color: var(--color-accent); /* Azul vibrante */
 }
 
-/* Flecha cuando hay imagen */
+/* Flecha con imagen */
 .read-arrow-image {
   position: absolute;
-  right: -30px; /* Sale 30px hacia la derecha del contenedor de la imagen */
-  top: 50%;
-  transform: translateY(-50%);
+  right: 10px; /* Espacio interno del contenedor */
+  top: 0;
+  bottom: 0; /* Hace que la flecha ocupe toda la altura */
+  margin: auto; /* Centra verticalmente */
   background-color: var(--color-secondary);
-  padding: 8px 16px;
-  width: 60px;
-  text-align: center;
-  z-index: 1;
+  padding: 20px 10px; /* Mayor padding vertical, menos horizontal */
+  width: 40px; /* Ancho más estrecho */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.read-arrow-image i {
+  font-size: 1.5em; /* Tamaño mayor para la flecha */
 }
 
 /* Contenedor de la imagen */
@@ -59,15 +69,41 @@
   align-items: center;
   justify-content: center;
   height: 200px; /* Alto fijo */
-  width: 250px; /* Ancho fijo para la imagen */
-  margin-left: auto; /* ¡Clave! Empuja el contenedor hacia la derecha */
-  margin-right: -20px; /* Salida del contenedor para la flecha */
+  width: 30%; /* Ancho relativo al card */
+  min-width: 200px; /* Ancho mínimo */
+  margin-left: auto; /* Alinea al lado derecho */
 }
 
-/* Flecha cuando NO hay imagen */
+/* Flecha para posts sin imagen */
 .read-arrow-text {
-	margin-top: 15px;
-	margin-left: auto; /* Alinea a la derecha */
+  position: absolute;
+  right: 10px; /* Alineado al margen derecho */
+  top: 0; /* Comienza en la parte superior */
+  bottom: 0; /* Llega hasta la parte inferior */
+  margin: auto; /* Centra verticalmente */
+  background-color: var(--color-secondary);
+  padding: 20px 10px; /* Altura vertical */
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.read-arrow-text i {
+  font-size: 1.5em; /* Tamaño del ícono */
+}
+
+.read-arrow-text:hover,
+.read-arrow-image:hover {
+  background-color: var(--color-accent);
+  color: var(--color-background);
+}
+
+.read-arrow-text i,
+.read-arrow-image i {
+  font-size: 1.5em;
 }
 
 /* Ajustes para el contenedor principal */
@@ -129,11 +165,11 @@
 
 /* Estilos de la imagen */
 .blog-image {
-	max-width: 100%;
-	height: 100%;
-	border-radius: 8px;
-	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-	object-fit: cover; /* Ajusta la imagen sin deformar */
+  max-width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Ajustes para dispositivos móviles */
