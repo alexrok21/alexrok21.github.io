@@ -39,12 +39,24 @@ exclude:
   - vendor/gems/
   - vendor/ruby/
 
-# Opcional: Colección de posts
+# Para generar páginas de categorías y etiquetas
 collections:
-  posts:
+  categories:
     output: true
+    permalink: /categories/:name/
+  tags:
+    output: true
+    permalink: /tags/:name/
 
 # Metadatos del autor (opcional)
 author:
   name: Alexandro Roca
   bio: Desarrollador de software, creador de contenido, y amante de la tecnología.
+
+  defaults:
+  -
+    scope:
+      path: ""  # Aplica a todas las rutas
+      type: posts
+    values:
+      layout: post  # Usa el layout 'post.html'
