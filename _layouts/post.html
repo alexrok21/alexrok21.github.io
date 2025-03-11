@@ -2,23 +2,30 @@
 layout: default
 ---
 
-<!-- Contenido del post -->
 <article class="post-content">
-  <header class="post-header">
-    <h1>{{ page.title }}</h1>
-    <div class="post-meta">
-      <span class="date"
-        ><i class="fas fa-calendar-alt"></i> {{ page.date | date: "%Y-%m-%d"
-        }}</span
-      >
-      <span class="category">
-        <i class="fas fa-folder-open"></i> {{ page.category }}
-      </span>
+  <!-- Encabezado con banner como fondo -->
+  <header
+    class="post-header"
+    style="background-image: url('{{ page.image }}');"
+  >
+    <div class="post-header-overlay">
+      <h1>{{ page.title }}</h1>
+      <div class="post-meta">
+        <span class="date"
+          ><i class="fas fa-calendar-alt"></i> {{ page.date | date: "%Y-%m-%d"
+          }}</span
+        >
+        <span class="category">
+          <i class="fas fa-folder-open"></i> {{ page.category }}
+        </span>
+      </div>
     </div>
   </header>
 
+  <!-- Contenido principal -->
   <div class="post-body">{{ content }}</div>
 
+  <!-- Pie de página -->
   <footer class="post-footer">
     <div class="read-time">
       <i class="fas fa-clock"></i> {{ page.read_time }} minutos de lectura

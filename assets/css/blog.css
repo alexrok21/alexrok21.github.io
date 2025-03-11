@@ -19,21 +19,23 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   position: relative;
   height: 200px;
-  /* ¡Altura fija para todas las tarjetas! */
+  overflow: hidden;
 }
 
 /* Contenido principal (textos) */
 .blog-content {
   flex: 1;
   position: relative;
-  /* Contenedor para la flecha */
   max-width: 60%;
   height: 100%;
   /* Ocupa toda la altura del card */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /* Espacio entre contenido y flecha */
+  overflow: hidden;
+  /* Evita desbordamiento interno */
+  padding-bottom: 10px;
+  /* Espacio adicional para evitar recortes */
 }
 
 /* Flecha genérica */
@@ -108,29 +110,11 @@
   align-items: center;
   justify-content: center;
   height: 100%;
-  /* Altura completa del card */
   width: 30%;
-  min-width: 200px;
+  min-width: 150px;
   margin-left: auto;
   margin-right: 20px;
 }
-
-/* Flecha para posts sin imagen */
-/* .read-arrow-text {
-  position: absolute;
-  right: 10px;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  background-color: var(--color-secondary);
-  padding: 20px 10px;
-  width: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 4px;
-  transition: background-color 0.3s, color 0.3s;
-} */
 
 .read-arrow-text i {
   font-size: 1.5em;
@@ -169,9 +153,8 @@
 
 /* Metadatos */
 .blog-meta {
-  margin: 10px 0;
+  margin: 5px 0;
   color: var(--color-text-secondary);
-  /* Azul grisáceo */
   font-size: 0.9em;
 }
 
@@ -201,16 +184,23 @@
 /* Descripción */
 .blog-description {
   color: var(--color-text-primary);
-  /* Negro suave */
-  margin: 15px 0;
+  margin: 10px 0;
   line-height: 1.6;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  /* Máximo 3 líneas */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 /* Estadísticas */
 .blog-stats {
-  margin: 10px 0;
+  margin-top: auto;
+  margin-bottom: 0;
   color: var(--color-text-secondary);
-  font-size: 0.9em;
+  font-size: 0.8em;
+  padding: 5px 0;
+  /* Espacio interno para mejorar la legibilidad */
 }
 
 /* Estilos de la imagen */
@@ -223,21 +213,31 @@
 }
 
 /* Ajustes para dispositivos móviles */
-/* Ajuste para móviles */
 @media (max-width: 768px) {
   .blog-card {
     height: auto;
-    /* Altura dinámica en móviles */
+    /* Altura dinámica */
     flex-direction: column;
     gap: 15px;
   }
 
+  .blog-stats {
+    font-size: 0.9em;
+    /* Tamaño ligeramente mayor para móviles */
+    padding: 5px 0;
+  }
+
   .blog-content {
+    max-width: 100%;
+    /* Usa todo el ancho */
     height: auto;
   }
 
   .blog-image-container {
     width: 100%;
+    /* Imagen ocupa todo el ancho */
+    min-width: auto;
+    /* Sin ancho mínimo */
     margin-left: 0;
     margin-right: 0;
   }

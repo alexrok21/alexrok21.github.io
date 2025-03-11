@@ -1,29 +1,70 @@
-Estilos globales para posts .post-content {
-   max-width: 800px;
+/* Contenido principal */
+.post-content {
+   max-width: 60%;
    margin: 0 auto;
    padding: 2rem;
    background-color: var(--color-background);
-   border-radius: 8px;
+   border-radius: 0 0 8px 8px;
+   /* Bordes redondeados solo abajo */
    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+   margin-bottom: 1%;
+   margin-top: 1%;
 }
 
+/* Encabezado con banner como fondo */
 .post-header {
-   text-align: center;
-   margin-bottom: 2rem;
-}
-
-.post-header h1 {
-   color: var(--color-accent);
-   font-size: 2.5em;
+   position: relative;
+   width: 100%;
+   height: 300px;
+   background-size: cover;
+   background-position: center;
+   border-radius: 8px 8px 0 0;
    margin-bottom: 1rem;
 }
 
+.post-header-overlay {
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background-color: rgba(0, 0, 0, 0.5);
+   /* Sombra para mejorar legibilidad */
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   color: var(--color-background);
+   /* Texto blanco sobre el banner */
+   padding: 2rem;
+   border-radius: 8px 8px 0 0;
+}
+
+.post-header h1 {
+   font-size: 2.5em;
+   margin-bottom: 0.5rem;
+   color: var(--color-background);
+}
+
 .post-meta {
-   color: var(--color-text-secondary);
+   color: var(--color-background);
    font-size: 0.9em;
    display: flex;
-   justify-content: center;
-   gap: 1.5rem;
+   gap: 1rem;
+}
+
+.post-meta i {
+   margin-right: 5px;
+}
+
+/* Estilo para el banner */
+.post-header img {
+   width: 100%;
+   height: auto;
+   max-height: 300px;
+   object-fit: cover;
+   border-radius: 8px;
    margin-bottom: 2rem;
 }
 
@@ -32,30 +73,40 @@ Estilos globales para posts .post-content {
    color: var(--color-text-primary);
 }
 
+/* Títulos */
 .post-body h2,
 .post-body h3 {
    color: var(--color-accent);
+   /* Azul vibrante */
    margin: 2rem 0 1rem 0;
 }
 
+/* Texto principal */
 .post-body p {
    margin: 1rem 0;
+   text-align: justify;
 }
 
+/* Estilo para imágenes intermedias */
 .post-body img {
-   max-width: 100%;
+   width: 60%;
+   max-width: 200px;
    height: auto;
+   float: left;
+   margin-right: 1.5rem;
+   margin-bottom: 1rem;
    border-radius: 8px;
-   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-   margin: 2rem 0;
+   object-fit: cover;
 }
 
+/* Citas destacadas */
 .post-body blockquote {
    background-color: var(--color-secondary);
    color: var(--color-background);
-   padding: 1rem 2rem;
+   padding: 0.8rem 1.5rem;
    border-left: 5px solid var(--color-accent);
    margin: 2rem 0;
+   border-radius: 4px;
 }
 
 .post-body code {
@@ -66,12 +117,15 @@ Estilos globales para posts .post-content {
    font-family: 'Courier New', monospace;
 }
 
+/* Bloques de código */
 .post-body pre {
    background-color: var(--color-secondary);
    color: var(--color-background);
    padding: 1rem;
    border-radius: 8px;
    overflow-x: auto;
+   font-size: 0.9em;
+   margin: 1.5rem 0;
 }
 
 .post-footer {
@@ -83,4 +137,16 @@ Estilos globales para posts .post-content {
 .read-time {
    text-align: center;
    color: var(--color-text-secondary);
+   font-size: 0.9em;
+   margin-top: 1rem;
+}
+
+/* Desactivar float en pantallas pequeñas */
+@media (max-width: 768px) {
+   .post-body img {
+      float: none;
+      width: 100%;
+      max-width: 100%;
+      margin-right: 0;
+   }
 }
