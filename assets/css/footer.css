@@ -1,9 +1,7 @@
 /* Footer */
 footer {
    background: var(--color-secondary);
-   /* Azul morado */
    color: #fff;
    text-align: center;
    padding: 1rem;
-   /* Eliminamos el margin-top, ya que Flexbox maneja el espaciado */
 }

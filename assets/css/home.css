@@ -5,13 +5,12 @@
 	justify-content: center;
 	align-items: center;
 	padding: 2rem;
-	height: 100vh;
+	height: auto;
+	min-height: 100vh;
 	background: var(--color-primary);
 	position: relative;
-	overflow: hidden;
-	/* Evita el scroll vertical */
+	overflow: visible;
 	color: var(--color-text-primary);
-	/* Asegurar que el texto sea legible */
 	width: 100%;
 }
 
@@ -70,7 +69,7 @@
 .profile-image {
 	max-width: 100%;
 	width: 100%;
-	height: auto;
+	height: 100%;
 	object-fit: cover;
 	border-radius: 50%;
 	position: absolute;
@@ -489,70 +488,77 @@
 
 /* Media query para móviles */
 @media (max-width: 768px) {
+	.landing-page {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+		height: 100vh;
+		/* Asegurar que ocupe toda la pantalla */
+		padding: 1rem 0;
+		background-color: var(--color-primary);
+	}
+
 	.split-container {
 		flex-direction: column;
-		/* Apilar las secciones verticalmente */
+		align-items: center;
 		gap: 1rem;
-		/* Reducir el espacio entre las secciones */
+		flex-grow: 1;
+		width: 100%;
 	}
 
 	.orbit-section {
+		display: flex;
 		width: 100%;
-		/* Ocupar todo el ancho */
 		text-align: center;
-		/* Centrar los elementos */
+		margin-bottom: auto;
+		/* Para que no empuje demasiado */
+		transform: scale(0.5);
 	}
 
 	.orbit-container {
-		transform: scale(0.8);
-		/* Reducir el tamaño del contenedor orbital */
-		margin: 0 auto;
-		/* Centrar el contenedor */
+		display: flex;
+		max-width: 100%;
+		width: auto;
+		height: auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 
 	.text-section {
+		display: flex;
 		width: 100%;
-		/* Ocupar todo el ancho */
 		text-align: center;
-		/* Centrar el texto */
 		padding: 1rem;
-		/* Reducir el padding */
+		margin-top: auto;
 	}
 
 	.text-content h1 {
 		font-size: 1.8rem;
-		/* Tamaño de fuente más pequeño para móviles */
 	}
 
 	.text-content p {
 		font-size: 1rem;
-		/* Tamaño de fuente reducido */
 	}
 
 	.text-section .button {
 		font-size: 0.9rem;
-		/* Botón más pequeño */
 		padding: 0.5rem 1rem;
-		/* Reducir el padding del botón */
 	}
 
 	/* Tooltips responsivos */
 	.tooltip-container {
 		width: 90%;
-		/* Ancho reducido para móviles */
 		margin: 0 auto;
-		/* Centrar el tooltip */
 	}
 
 	.tooltip-body {
 		flex-direction: column;
-		/* Cambiar disposición a columna */
 		gap: 1rem;
-		/* Espacio entre elementos */
 	}
 
 	.sidebar {
 		display: none;
-		/* Ocultar sidebar en móviles */
 	}
 }
