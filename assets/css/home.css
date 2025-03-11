@@ -1,8 +1,10 @@
 /* Contenedor principal */
 .landing-page {
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	padding: 2rem;
 	height: 100vh;
 	background: var(--color-primary);
 	position: relative;
@@ -13,17 +15,31 @@
 	width: 100%;
 }
 
-/* Contenedor de las dos secciones */
 .split-container {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	/* Divide la pantalla en dos columnas iguales */
+	display: flex;
+	gap: 2rem;
+	/* Espacio entre las secciones */
 	width: 90%;
-	/* Ajusta el ancho total */
+	/* Ancho total */
 	max-width: 1200px;
 	/* Límite máximo para pantallas grandes */
-	gap: 20px;
-	/* Espacio entre las columnas */
+	margin: 0 auto;
+	/* Centrado horizontal */
+}
+
+/* Sección Izquierda: Orbitales */
+.orbit-section {
+	flex: 1;
+	/* Ocupa el espacio disponible */
+	position: relative;
+	text-align: center;
+	/* Centrar elementos internos */
+}
+
+.orbit-container {
+	position: relative;
+	margin: 0 auto;
+	/* Centrar el contenedor */
 }
 
 /* Contenedor de la imagen principal */
@@ -52,8 +68,9 @@
 
 /* Imágenes dentro del contenedor */
 .profile-image {
+	max-width: 100%;
 	width: 100%;
-	height: 100%;
+	height: auto;
 	object-fit: cover;
 	border-radius: 50%;
 	position: absolute;
@@ -372,53 +389,39 @@
 
 /* Sección Derecha: Texto Descriptivo */
 .text-section {
+	flex: 1;
+	/* Ocupa el espacio disponible */
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
-	/* Alinea el contenido hacia arriba */
 	align-items: flex-start;
-	/* Alinea el contenido a la izquierda */
 	color: #fff;
 	text-align: left;
 	position: relative;
-	width: 120%;
-	/* Aumenta el ancho en un 20% */
-	margin-top: 40px;
-	/* Margen superior para separar del borde */
 	padding: 20px;
-	/* Espaciado interno */
 	box-sizing: border-box;
-	/* Incluye el padding en el cálculo del ancho */
 }
 
 .text-section h1 {
 	font-size: 2.5rem;
 	margin-bottom: 1rem;
 	opacity: 0;
-	/* Inicialmente oculto */
 	transform: translateY(20px);
-	/* Posición inicial fuera de vista */
 	transition: opacity 0.5s ease, transform 0.5s ease;
-	/* Animación de entrada */
 }
 
 .text-section p {
 	font-size: 1.2rem;
 	margin-bottom: 1rem;
 	opacity: 0;
-	/* Inicialmente oculto */
 	transform: translateY(20px);
-	/* Posición inicial fuera de vista */
 	transition: opacity 0.5s ease, transform 0.5s ease;
-	/* Animación de entrada */
 }
 
 /* Botón de acción */
 .text-section .button {
 	background: var(--color-accent);
-	/* Color de fondo del botón */
 	color: var(--color-light);
-	/* Mejor contraste con un color más claro */
 	border: none;
 	padding: 0.75rem 1.5rem;
 	border-radius: 5px;
@@ -426,19 +429,14 @@
 	font-size: 1rem;
 	text-decoration: none;
 	opacity: 0;
-	/* Inicialmente oculto */
 	transform: translateY(20px);
-	/* Posición inicial fuera de vista */
 	transition: opacity 0.5s ease, transform 0.5s ease;
-	/* Animación de entrada */
 }
 
 /* Hover */
 .text-section .button:hover {
 	background: var(--color-secondary);
-	/* Color secundario en hover */
 	color: var(--color-light);
-	/* Asegurar contraste */
 }
 
 /* Contenedor común para los bloques de texto */
@@ -489,23 +487,72 @@
 	/* Mover hacia la posición final */
 }
 
+/* Media query para móviles */
 @media (max-width: 768px) {
-
-	/* Cambiar a una sola columna en pantallas pequeñas */
 	.split-container {
-		grid-template-columns: 1fr;
-		/* Una sola columna */
+		flex-direction: column;
+		/* Apilar las secciones verticalmente */
+		gap: 1rem;
+		/* Reducir el espacio entre las secciones */
 	}
 
-	/* Reducir el tamaño del contenedor de la órbita */
-	.orbit-container {
-		width: 600px;
-		height: 600px;
-	}
-
-	/* Centrar el texto */
-	.text-section {
-		align-items: center;
+	.orbit-section {
+		width: 100%;
+		/* Ocupar todo el ancho */
 		text-align: center;
+		/* Centrar los elementos */
+	}
+
+	.orbit-container {
+		transform: scale(0.8);
+		/* Reducir el tamaño del contenedor orbital */
+		margin: 0 auto;
+		/* Centrar el contenedor */
+	}
+
+	.text-section {
+		width: 100%;
+		/* Ocupar todo el ancho */
+		text-align: center;
+		/* Centrar el texto */
+		padding: 1rem;
+		/* Reducir el padding */
+	}
+
+	.text-content h1 {
+		font-size: 1.8rem;
+		/* Tamaño de fuente más pequeño para móviles */
+	}
+
+	.text-content p {
+		font-size: 1rem;
+		/* Tamaño de fuente reducido */
+	}
+
+	.text-section .button {
+		font-size: 0.9rem;
+		/* Botón más pequeño */
+		padding: 0.5rem 1rem;
+		/* Reducir el padding del botón */
+	}
+
+	/* Tooltips responsivos */
+	.tooltip-container {
+		width: 90%;
+		/* Ancho reducido para móviles */
+		margin: 0 auto;
+		/* Centrar el tooltip */
+	}
+
+	.tooltip-body {
+		flex-direction: column;
+		/* Cambiar disposición a columna */
+		gap: 1rem;
+		/* Espacio entre elementos */
+	}
+
+	.sidebar {
+		display: none;
+		/* Ocultar sidebar en móviles */
 	}
 }

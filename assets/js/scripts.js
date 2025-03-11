@@ -61,24 +61,6 @@
   });
 })();
 
-// Módulo 2: Interacciones del Menú
-// (function menuModule() {
-//   const navLinks = document.querySelectorAll(".nav-menu a");
-//   const logoCursor = document.querySelector(".logo .cursor");
-
-//   // Añadir eventos a los enlaces del menú
-//   navLinks.forEach((link) => {
-//     link.addEventListener("mouseenter", () => {
-//       logoCursor.style.opacity = "0"; // Oculta el cursor del título
-//       logoCursor.style.animation = "none"; // Detiene la animación
-//     });
-//     link.addEventListener("mouseleave", () => {
-//       logoCursor.style.opacity = "1"; // Muestra el cursor del título
-//       logoCursor.style.animation = "blink 1s infinite"; // Reactiva la animación
-//     });
-//   });
-// })();
-
 (function menuModule() {
   // Espera a que el DOM esté completamente cargado
   document.addEventListener("DOMContentLoaded", () => {
@@ -142,26 +124,39 @@
   });
 })();
 
-// Seleccionar todos los círculos orbitales
-// const orbitCircles = document.querySelectorAll('.orbit-circle');
-/* const orbitCircles = "";
+// Módulo 4: Menú Hamburguesa
+(function hamburgerMenuModule() {
+  document.addEventListener("DOMContentLoaded", () => {
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
 
-// Función para detener todas las animaciones
-function stopAllAnimations() {
-    orbitCircles.forEach(circle => {
-        circle.style.animationPlayState = 'paused';
+    if (!hamburger || !navMenu) {
+      console.error("El botón de hamburguesa o el menú no fueron encontrados.");
+      return;
+    }
+
+    hamburger.addEventListener("click", () => {
+      if (navMenu.classList.contains("active")) {
+        navMenu.classList.remove("active");
+        setTimeout(() => {
+          navMenu.style.maxHeight = "0";
+        }, 300); // Esconde el menú después de la animación
+      } else {
+        navMenu.style.maxHeight = "500px"; // Ajusta según necesidad
+        navMenu.classList.add("active");
+      }
     });
-}
 
-// Función para reanudar todas las animaciones
-function resumeAllAnimations() {
-    orbitCircles.forEach(circle => {
-        circle.style.animationPlayState = 'running';
+    document.addEventListener("click", (event) => {
+      if (
+        !navMenu.contains(event.target) &&
+        !hamburger.contains(event.target)
+      ) {
+        navMenu.classList.remove("active");
+        setTimeout(() => {
+          navMenu.style.maxHeight = "0";
+        }, 300);
+      }
     });
-}
-
-// Añadir eventos de hover a cada círculo
-orbitCircles.forEach(circle => {
-    circle.addEventListener('mouseenter', stopAllAnimations); // Detener al entrar
-    circle.addEventListener('mouseleave', resumeAllAnimations); // Reanudar al salir
-}); */
+  });
+})();

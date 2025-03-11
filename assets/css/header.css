@@ -157,3 +157,52 @@ header {
    animation: blink 1s infinite;
    /* Aplica la animación de parpadeo */
 }
+
+/* Botón de hamburguesa */
+.hamburger {
+   display: none;
+   /* Oculto por defecto */
+   font-size: 1.5rem;
+   color: #fff;
+   background: none;
+   border: none;
+   cursor: pointer;
+   padding: 0.5rem;
+   transition: color 0.3s ease;
+}
+
+.hamburger:hover {
+   color: var(--color-accent);
+}
+
+/* Media query para móviles */
+@media (max-width: 768px) {
+   .hamburger {
+      display: block;
+   }
+
+   .nav-menu {
+      visibility: hidden;
+      opacity: 0;
+      max-height: 0;
+      flex-direction: column;
+      gap: 1rem;
+      background: var(--color-secondary);
+      position: fixed;
+      top: 80px;
+      left: 0;
+      right: 0;
+      padding: 1rem;
+      z-index: 1000;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+      transition: max-height 0.3s ease, opacity 0.3s ease, visibility 0.3s;
+      width: 100%;
+   }
+
+   .nav-menu.active {
+      visibility: visible;
+      opacity: 1;
+      max-height: 100vh;
+   }
+}
