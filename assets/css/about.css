@@ -126,6 +126,24 @@
 	/* Centra verticalmente */
 }
 
+/* Estilo de los enlaces dentro de .card-content */
+.card-content a {
+	color: var(--color-accent); /* Color principal para los enlaces */
+	text-decoration: none; /* Eliminar subrayado predeterminado */
+	font-weight: bold; /* Resaltar el texto */
+	transition: color 0.3s ease; /* Animación suave al pasar el cursor */
+}
+
+/* Estado hover (cuando el usuario pasa el cursor sobre el enlace) */
+.card-content a:hover {
+	color: var(--color-highlight); /* Cambiar color al pasar el cursor */
+}
+
+/* Estado visited (cuando el enlace ya ha sido visitado) */
+.card-content a:visited {
+	color: var(--color-accent); /* Mantener el mismo color que el estado normal */
+}
+
 .card-content h2 {
 	font-size: 1.5rem;
 	margin-bottom: 10px;

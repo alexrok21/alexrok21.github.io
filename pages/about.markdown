@@ -112,7 +112,7 @@ permalink: /about/
             <h2>Contacto</h2>
             <p>
                 📧 <a href="mailto:alexroca2191@gmail.com">alexroca2191@gmail.com</a><br>
-                💼 <a href="https://linkedin.com/in/tu-perfil" target="_blank">LinkedIn</a><br>
+                💼 <a href="https://www.linkedin.com/in/alexandro-roca-911b76133" target="_blank">LinkedIn</a><br>
                 👨‍💻 <a href="https://github.com/alexrok21" target="_blank">GitHub</a>
             </p>
             <p>¡Siempre abierto a nuevos proyectos y oportunidades! 🚀</p>
