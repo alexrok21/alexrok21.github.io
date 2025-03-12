@@ -526,6 +526,10 @@
 		align-items: center;
 	}
 
+	.text-container {
+		position: initial;
+	} 
+
 	.text-section {
 		display: flex;
 		width: 100%;

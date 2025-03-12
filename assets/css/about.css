@@ -2,160 +2,200 @@
 
 /* Secciones */
 .section {
-   margin-bottom: 40px;
+	margin-bottom: 40px;
 }
 
 .section-title {
-   font-size: 1.8rem;
-   margin-bottom: 20px;
-   color: var(--color-text-primary);
-   border-bottom: 2px solid var(--color-accent);
-   /* Amarillo cálido */
-   padding-bottom: 10px;
+	font-size: 1.8rem;
+	margin-bottom: 20px;
+	color: var(--color-text-primary);
+	border-bottom: 2px solid var(--color-accent);
+	/* Amarillo cálido */
+	padding-bottom: 10px;
 }
 
 /* Lista de habilidades */
 .skills-list {
-   display: grid;
-   grid-template-columns: repeat(2, 1fr);
-   /* Dos columnas */
-   gap: 10px;
-   list-style: none;
-   padding: 0;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	/* Dos columnas */
+	gap: 10px;
+	list-style: none;
+	padding: 0;
 }
 
 .skills-list li {
-   background: var(--color-light);
-   /* Fondo amarillo claro */
-   padding: 10px;
-   border-radius: 5px;
-   font-size: 1rem;
-   color: var(--color-text-primary);
-   text-align: center;
+	background: var(--color-light);
+	/* Fondo amarillo claro */
+	padding: 10px;
+	border-radius: 5px;
+	font-size: 1rem;
+	color: var(--color-text-primary);
+	text-align: center;
 }
 
 /* Botones de contacto */
 .contact-buttons {
-   display: flex;
-   gap: 10px;
-   margin-top: 20px;
+	display: flex;
+	gap: 10px;
+	margin-top: 20px;
 }
 
 .contact-buttons a {
-   background: var(--color-accent);
-   /* Amarillo cálido */
-   color: var(--color-text-primary);
-   padding: 10px 20px;
-   border-radius: 5px;
-   transition: background 0.3s ease;
-   text-decoration: none;
-   font-size: 1rem;
+	background: var(--color-accent);
+	/* Amarillo cálido */
+	color: var(--color-text-primary);
+	padding: 10px 20px;
+	border-radius: 5px;
+	transition: background 0.3s ease;
+	text-decoration: none;
+	font-size: 1rem;
 }
 
 .contact-buttons a:hover {
-   background: var(--color-highlight);
+	background: var(--color-highlight);
 }
 
 /* Textos secundarios */
 .secondary-text {
-   color: var(--color-text-secondary);
-   font-size: 1rem;
-   line-height: 1.6;
+	color: var(--color-text-secondary);
+	font-size: 1rem;
+	line-height: 1.6;
 }
 
 /* Contenedor principal */
 .about-container {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   gap: 20px;
-   padding: 40px;
-   border-radius: 10px;
-   max-width: 960px;
-   /* Nuevo ancho (20% más) */
-   margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+	padding: 40px;
+	border-radius: 10px;
+	max-width: 960px;
+	/* Nuevo ancho (20% más) */
+	margin: 0 auto;
 }
 
 /* Estilo de las tarjetas */
 .card {
-   display: flex;
-   align-items: center;
-   gap: 20px;
-   background: var(--color-secondary);
-   padding: 20px;
-   border-radius: 10px;
-   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-   width: 100%;
-   max-width: 80%;
-   height: 300px;
-   transition: transform 0.3s ease, box-shadow 0.3s ease;
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	background: var(--color-secondary);
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	width: 100%;
+	max-width: 80%;
+	height: 300px;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
-   transform: translateY(-5px);
-   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+	transform: translateY(-5px);
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 .card-icon {
-   flex-shrink: 0;
-   width: 25%;
-   /* Nuevo ancho (25% del ancho de la tarjeta) */
-   height: auto;
-   /* Mantener la proporción del alto */
-   aspect-ratio: 1 / 1;
-   /* Asegura que el ícono sea cuadrado */
-   display: flex;
-   align-items: center;
-   justify-content: center;
+	flex-shrink: 0;
+	width: 25%;
+	/* Nuevo ancho (25% del ancho de la tarjeta) */
+	height: auto;
+	/* Mantener la proporción del alto */
+	aspect-ratio: 1 / 1;
+	/* Asegura que el ícono sea cuadrado */
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .card-icon img {
-   width: 100%;
-   height: 100%;
-   object-fit: cover;
-   border-radius: 5px;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 5px;
 }
 
 /* Contenido de la tarjeta */
 .card-content {
-   flex-grow: 1;
-   /* Asegura que el contenido ocupe todo el espacio restante */
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   /* Centra verticalmente */
+	flex-grow: 1;
+	/* Asegura que el contenido ocupe todo el espacio restante */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	/* Centra verticalmente */
 }
 
 .card-content h2 {
-   font-size: 1.5rem;
-   margin-bottom: 10px;
-   color: var(--color-accent);
+	font-size: 1.5rem;
+	margin-bottom: 10px;
+	color: var(--color-accent);
 }
 
 .card-content p,
 .card-content ul {
-   font-size: 1rem;
-   line-height: 1.6;
-   color: var(--color-highlight);
+	font-size: 1rem;
+	line-height: 1.6;
+	color: var(--color-highlight);
 }
 
 .card-content ul {
-   list-style: none;
-   padding: 0;
+	list-style: none;
+	padding: 0;
 }
 
 .card-content ul li {
-   margin-bottom: 5px;
+	margin-bottom: 5px;
 }
 
 .card:nth-child(odd) {
-   align-self: flex-start;
-   margin-left: 0;
-   margin-right: auto;
+	align-self: flex-start;
+	margin-left: 0;
+	margin-right: auto;
 }
 
 .card:nth-child(even) {
-   align-self: flex-end;
-   margin-right: 0;
-   margin-left: auto;
+	align-self: flex-end;
+	margin-right: 0;
+	margin-left: auto;
+}
+
+/* Media query para móviles */
+@media (max-width: 768px) {
+	.card {
+		flex-direction: column; /* Apilar ícono y contenido verticalmente */
+		align-items: center; /* Centrar elementos */
+		text-align: center; /* Centrar el texto */
+		max-width: 100%; /* Ocupar todo el ancho disponible */
+		height: auto; /* Altura automática para adaptarse al contenido */
+	}
+
+	.card-icon {
+		width: 40%; /* Reducir el tamaño del ícono */
+		margin-bottom: 1rem; /* Espacio entre el ícono y el contenido */
+	}
+
+	.card-content {
+		width: 100%; /* Asegurar que el contenido ocupe todo el ancho */
+		padding: 0 1rem; /* Agregar espacio interno */
+	}
+
+	.card-content h2 {
+		font-size: 1.2rem; /* Tamaño de fuente más pequeño para móviles */
+	}
+
+	.card-content p,
+	.card-content ul {
+		font-size: 0.9rem; /* Tamaño de fuente reducido */
+		line-height: 1.5; /* Mejorar la legibilidad */
+		overflow-wrap: break-word; /* Asegurar que las palabras largas se ajusten */
+		word-break: break-word; /* Romper palabras largas si es necesario */
+	}
+
+	.card:nth-child(odd),
+	.card:nth-child(even) {
+		align-self: center; /* Centrar todas las tarjetas */
+		margin-left: 0;
+		margin-right: 0;
+	}
 }
